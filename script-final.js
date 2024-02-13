@@ -127,7 +127,7 @@ const giveTask = () => {
         if (!robotsList[i].isBusy) {
             let currentTask = tasksQueue.pop();
             if (!currentTask) return;
-            console.log(`${currentTask.id} определена и выдана роботу №${i}`)
+            console.log(`${currentTask.id} --- определена --- выдана роботу №${i}`)
             executeTask(robotsList[i], currentTask);
             break;
         }
